@@ -33,21 +33,18 @@ You need the following to be setup on your machines :-
 
 1) Add group info for group_id g1 :-
 
-`
+```
 redis-cli
 
 set g1:limit 10 # The maximum length of this group
 
 set g1:topic buffer # Kafka Topic to push this message to.
 
-`
+```
 
 2) Send Post Request With Json Data :-
 
-`
-curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","group_id":"g1"}'  http://localhost:8082
-
-`
+`curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","group_id":"g1"}'  http://localhost:8082`
 
 3) Once you reach the limit 10 the data will be pushed to kafka
 
