@@ -15,7 +15,7 @@ setup(name='BufferedQueue',
     install_requires = [
         "redis==2.10.3",
         "simplejson==3.10.0",
-        "pyyaml==3.11",
+        "pyyaml==5.1",
         "kafka==1.3.1"
     ]
 )
